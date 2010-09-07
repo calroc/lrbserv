@@ -19,6 +19,14 @@ def base(path):
 DATABASE_ENGINE = 'sqlite3'
 DATABASE_NAME = base('test.db')
 
+# EMAIL_HOST defaults to 'localhost'.
+EMAIL_PORT = 1025 # debug setting,
+# Use the following command line to start a debugging SMTP server that
+# prints to stdout.
+#     python -m smtpd -n -c DebuggingServer localhost:1025
+
+ACCOUNT_ACTIVATION_DAYS = 7
+
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
@@ -80,4 +88,5 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.admin',
     'django.contrib.admindocs',
+    'registration',
 )
