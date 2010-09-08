@@ -1,0 +1,14 @@
+Welcome new user.
+
+
+{{ expiration_days }}
+    The number of days remaining during which the account may be
+    activated.
+
+Please click on this link within {{ expiration_days }} days to activate
+your new account:
+
+http://{{ site.domain }}/accounts/activate/{{ activation_key }}
+
+Thank you!
+
