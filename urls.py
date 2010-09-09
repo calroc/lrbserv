@@ -9,6 +9,8 @@ urlpatterns = patterns('',
     (r'^admin/doc/', include('django.contrib.admindocs.urls')),
     (r'^admin/', include(admin.site.urls)),
     (r'^accounts/', include('registration.backends.default.urls')),
+    (r'^profiles/', include('profiles.urls')),
+
 ##
 ##    Request URL:  	http://127.0.0.1:8000/accounts/
 ##
