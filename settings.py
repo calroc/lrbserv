@@ -91,5 +91,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.admin',
     'django.contrib.admindocs',
+    'core',
     'registration',
+    'profiles',
 )
