@@ -31,5 +31,10 @@ urlpatterns = patterns('',
 ##      13. ^accounts/ ^password/reset/confirm/(?P<uidb36>[0-9A-Za-z]+)-(?P<token>.+)/$
 ##      14. ^accounts/ ^password/reset/complete/$
 ##      15. ^accounts/ ^password/reset/done/$
-
+##
+##          ^profiles/ ^create/$
+##          ^profiles/ ^edit/$',
+##          ^profiles/ ^(?P<username>\w+)/$
+##          ^profiles/ ^$
+##
 )
