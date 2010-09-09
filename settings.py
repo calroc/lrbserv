@@ -94,4 +94,5 @@ INSTALLED_APPS = (
     'core',
     'registration',
     'profiles',
+    'tagging',
 )
