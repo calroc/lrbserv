@@ -98,4 +98,5 @@ INSTALLED_APPS = (
     'registration',
     'profiles',
     'tagging',
+    'avatar',
 )

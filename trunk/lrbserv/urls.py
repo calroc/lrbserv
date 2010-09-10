@@ -11,7 +11,7 @@ urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)),
     (r'^accounts/', include('registration.backends.default.urls')),
     (r'^profiles/', include('profiles.urls')),
-
+    (r'^avatar/', include('avatar.urls')),
 ##
 ##    Request URL:  	http://127.0.0.1:8000/accounts/
 ##
