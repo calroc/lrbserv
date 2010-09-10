@@ -10,7 +10,7 @@ ADMINS = (
 MANAGERS = ADMINS
 
 
-BASE_PATH = '/home/tc/Software/lrbserv'
+BASE_PATH = '/home/tc/Software/lrbserv/lrbserv'
 
 def base(path):
     return os.path.join(BASE_PATH, path)

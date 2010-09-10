@@ -2,6 +2,7 @@ from django.conf.urls.defaults import *
 from django.contrib import admin
 admin.autodiscover()
 
+
 urlpatterns = patterns('',
     # Example:
     # (r'^lrbserv/', include('lrbserv.foo.urls')),
