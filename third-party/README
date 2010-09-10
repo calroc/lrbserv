@@ -1,4 +1,33 @@
-Unpack the django-registration-0.8-alpha-1.tar.gz tarball and link or
-move the registration directory/module into your main project diectory.
+This directory holds the third-party apps on which this project depends.
+By distributing them with the source to our own project we can depend on
+always having the source to the versions that we know work (because we've
+been developing and debugging for them.)
+
+There are a number of ways to install these apps.  Each app has a
+directory within it that contains the Python package that comprises the
+app.
+
+All you have to do to install the app is unpack the '*.tar.gz' tarball and link or
+move the app's package directory into your main project directory.
+
+From the top level directory you can use commands like the following to
+unpack and link the apps:
+
+# First change to the third-party dir and uncompress the apps.
+    cd third-party
+    ls *.tar.gz | xargs -n 1 tar xzf
+
+# Then go into the Django project dir and symlink the apps.
+    cd ../lrbserv
+    ln -s ../third-party/django-profiles-0.2/profiles
+    ln -s ../third-party/django-registration-0.8-alpha-1/registration
+    ln -s ../third-party/django-tagging-0.3.1/tagging
+
+etc...
+
+
+That should do it or you can also use the setup.py scripts to install the
+apps in your system.  See the individual packages' documentation for
+details of each.
 
 
